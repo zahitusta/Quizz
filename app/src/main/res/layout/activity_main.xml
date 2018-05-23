@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:backgroundTint="@color/colorPrimary"
+        android:orientation="vertical"
+        tools:context="com.example.android.quizz.MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:text="Can you spot the odd one(s)?"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white"
+            android:backgroundTint="@android:color/holo_purple"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Which one has two legs only?"
+                android:textColor="@android:color/background_light" />
+
+            <RadioGroup
+                android:id="@+id/q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:buttonTint="@color/colorAccent"
+
+                    android:id="@+id/q1a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="cat"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+                <RadioButton
+                    android:buttonTint="@color/colorAccent"
+                    android:id="@+id/q1b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="dog"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+                <RadioButton
+                    android:buttonTint="@color/colorAccent"
+                    android:id="@+id/q1c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="chicken"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Which one is not a fruit?"
+                android:textColor="@android:color/background_light" />
+            <RadioGroup
+                android:id="@+id/q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/q2a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:buttonTint="@color/colorAccent"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="apple"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/q2b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:buttonTint="@color/colorAccent"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="pear"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/q2c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:buttonTint="@color/colorAccent"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="nut"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white"
+            android:backgroundTint="@android:color/holo_purple"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Which oneis odd?"
+                android:textColor="@android:color/background_light" />
+            <RadioGroup
+                android:id="@+id/q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/q3a"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:buttonTint="@color/colorAccent"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="22"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/q3b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:buttonTint="@color/colorAccent"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="45"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/q3c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:buttonTint="@color/colorAccent"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="66"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Which one is different from the other two?"
+                android:textColor="@android:color/background_light" />
+            <RadioGroup
+                android:id="@+id/q4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/q4a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:buttonTint="@color/colorAccent"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="chess"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/q4b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:buttonTint="@color/colorAccent"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="table tennis"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/q4c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:buttonTint="@color/colorAccent"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="monopoly"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+            </RadioGroup>
+
+        </LinearLayout><LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:backgroundTint="@android:color/holo_purple"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Which one is different from the other two?"
+            android:textColor="@android:color/background_light" />
+        <RadioGroup
+            android:id="@+id/q5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q5a"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:buttonTint="@color/colorAccent"
+                android:scaleX=".9"
+                android:scaleY=".9"
+                android:text="nose"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/q5b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:buttonTint="@color/colorAccent"
+                android:scaleX=".9"
+                android:scaleY=".9"
+                android:text="elbow"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/q5c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:buttonTint="@color/colorAccent"
+                android:scaleX=".9"
+                android:scaleY=".9"
+                android:text="mouth"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Which one is different from the other two?"
+                android:textColor="@android:color/background_light" />
+            <RadioGroup
+                android:id="@+id/q6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/q6a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:buttonTint="@color/colorAccent"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="water"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/q6b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:buttonTint="@color/colorAccent"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="lemonade"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/q6c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:buttonTint="@color/colorAccent"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="coffee"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white"
+            android:backgroundTint="@android:color/holo_purple"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Which ones has two legs only?"
+                android:textColor="@android:color/background_light" />
+
+
+            <CheckBox
+                android:id="@+id/CheckBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chicken"
+                android:textColor="@android:color/background_light" />
+
+            <CheckBox
+                android:id="@+id/CheckBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Horse"
+                android:textColor="@android:color/background_light" />
+            <CheckBox
+                android:id="@+id/CheckBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elephant"
+                android:textColor="@android:color/background_light" />
+            <CheckBox
+                android:id="@+id/CheckBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lion"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="What is the name of the game in the picture below?"
+                android:textColor="@android:color/background_light" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/minecraft" />
+
+            <EditText
+                android:id="@+id/textReply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="type your answer here" />
+
+        </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:onClick="checkAnswers"
+        android:textAllCaps="true"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</ScrollView>
+
+
